@@ -68,14 +68,15 @@ Install [arduino-littlefs-upload](https://github.com/earlephilhower/arduino-litt
 
 ## Setup Instructions
 
-1. Install ESP32 board support in Arduino IDE
-2. Select correct ESP32 board and COM port
-3. upload /data to ESP32 using LittleFS
-4. Make a copy of config.example.h in the same folder and name it config.h
-5. In config.h, replace YOUR_WIFI_NAME your network ssid, and replace YOUR_WIFI_PASSWORD your network password
-6. Upload climateNode.ino to the ESP32
-7. Open Serial Monitor to obtain device IP address
-8. Enter device IP in a browser to access dashboard
+1. Download and unzip the project `.zip` file in releases
+2. Install ESP32 board support in Arduino IDE
+3. Select correct ESP32 board and COM port
+4. upload `/data` to ESP32 using LittleFS
+5. Make a copy of `config.example.h` in the same folder and name it `config.h`
+6. In config.h, replace `YOUR_WIFI_NAME` your network ssid, and replace `YOUR_WIFI_PASSWORD` your network password
+7. Upload `climateNode.ino` to the ESP32
+8. Open Serial Monitor to obtain device IP address
+9. Enter device IP in a browser to access dashboard
 
 ---
 
