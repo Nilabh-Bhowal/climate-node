@@ -6,7 +6,7 @@ This project is an ESP32-based embedded system that monitors temperature and hum
 
 The system operates fully standalone after flashing and does not require cloud services or external infrastructure.
 
-![dashboard screenshot](screenshots/dashboard.jpg)
+![dashboard screenshot](screenshots/dashboard.png)
 
 ---
 
@@ -26,11 +26,10 @@ The system operates fully standalone after flashing and does not require cloud s
 
 ## Hardware Requirements
 
-- ESP32 development board
-- DHT11 temperature and humidity sensor
-- DC fan or DC motor
-- Motor driver (L293D)
-- External power supply for motor (recommended)
+- ESP32 Development Board
+- DHT11 Temperature and Humidity Sensor
+- Low Voltage DC Fan or DC Motor
+- Motor Driver (L293D)
 
 ---
 
@@ -61,6 +60,30 @@ Install the following using Arduino Library Manager:
 - LittleFS (built into ESP32 core)
 
 Install arduino-littlefs-upload, following https://github.com/earlephilhower/arduino-littlefs-upload
+
+---
+
+## Setup Instructions
+
+1. Install ESP32 board support in Arduino IDE
+2. Select correct ESP32 board and COM port
+3. Use LittleFS to flash /data folder to ESP32
+4. In climateNode.ino, replace "SSID" on line 30 with your network ssid and "PASSWORD" on line 31 with your network password
+4. Upload climateNode.ino to the ESP32
+5. Open Serial Monitor to obtain device IP address
+6. Enter IP address in a browser to access dashboard
+
+---
+
+## IOS Installation Instructions
+
+1. Enter IP address in Safari
+2. Select the button with 3 dots on the bottom
+3. Select Share
+4. Select View More
+5. Select Add to Home Screen
+6. Make sure Open as Web App is selected
+7. Select Add
 
 ---
 
@@ -121,29 +144,6 @@ Sensor logs are stored in internal flash using LittleFS:
 ```
 
 This file can be accessed through the `/log` endpoint and downloaded via browser.
-
----
-
-## Setup Instructions
-
-1. Install ESP32 board support in Arduino IDE
-2. Select correct ESP32 board and COM port
-3. Use LittleFS to flash /data folder to ESP32
-4. Upload climateNode.ino to the ESP32
-5. Open Serial Monitor to obtain device IP address
-6. Enter IP address in a browser to access dashboard
-
----
-
-## IOS Installation Instructions
-
-1. Enter IP address in Safari
-2. Select the button with 3 dots on the bottom
-3. Select Share
-4. Select View More
-5. Select Add to Home Screen
-6. Make sure Open as Web App is selected
-7. Select Add
 
 ---
 
