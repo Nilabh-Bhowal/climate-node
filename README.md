@@ -62,7 +62,7 @@ Install the following using Arduino Library Manager:
 - WebServer (built into ESP32 core)
 - LittleFS (built into ESP32 core)
 
-Install arduino-littlefs-upload, following https://github.com/earlephilhower/arduino-littlefs-upload
+Install [arduino-littlefs-upload](https://github.com/earlephilhower/arduino-littlefs-upload)
 
 ---
 
@@ -70,12 +70,12 @@ Install arduino-littlefs-upload, following https://github.com/earlephilhower/ard
 
 1. Install ESP32 board support in Arduino IDE
 2. Select correct ESP32 board and COM port
-3. Use LittleFS to flash /data folder to ESP32
+3. upload /data to ESP32 using LittleFS
 4. Make a copy of config.example.h in the same folder and name it config.h
 5. In config.h, replace YOUR_WIFI_NAME your network ssid, and replace YOUR_WIFI_PASSWORD your network password
-4. Upload climateNode.ino to the ESP32
-5. Open Serial Monitor to obtain device IP address
-6. Enter device IP in a browser to access dashboard
+6. Upload climateNode.ino to the ESP32
+7. Open Serial Monitor to obtain device IP address
+8. Enter device IP in a browser to access dashboard
 
 ---
 
