@@ -6,7 +6,7 @@ This project is an ESP32-based embedded system that monitors temperature and hum
 
 The system operates fully standalone after flashing and does not require cloud services or external infrastructure.
 
-![dashboard screenshot](screenshots/dashboard.png)
+![dashboard screenshot](screenshots/dashboard.jpg)
 
 ---
 
