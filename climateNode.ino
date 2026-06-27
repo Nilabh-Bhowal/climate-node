@@ -4,6 +4,8 @@
 #include <DHT/dht_nonblocking.h>
 #include <DHT/dht_nonblocking.cpp>
 
+#include "config.h"
+
 
 // ========================
 // SENSOR CONFIG
@@ -20,15 +22,6 @@ DHT_nonblocking dhtSensor(DHT_PIN, DHT_TYPE);
 #define DIRA 27
 #define DIRB 26
 #define ENABLE 25
-
-
-// ========================
-// WIFI CREDENTIALS
-// ========================
-
-// REPLACE SSID AND PASSWORD WITH YOUR WIFI CREDENTIALS
-const char* ssid = "SSID";
-const char* password = "PASSWORD";
 
 
 // ========================
@@ -300,7 +293,7 @@ if (!f) {
 }
 
   // connect WiFi
-  WiFi.begin(ssid, password);
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
   WiFi.setSleep(false);
 
   while (WiFi.status() != WL_CONNECTED) {

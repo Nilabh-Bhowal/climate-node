@@ -6,6 +6,9 @@ This project is an ESP32-based embedded system that monitors temperature and hum
 
 The system operates fully standalone after flashing and does not require cloud services or external infrastructure.
 
+This project is provided as source-only.  
+You can compile and flash it using Arduino IDE with ESP32 support and LittleFS tool.
+
 ![dashboard screenshot](screenshots/dashboard.jpg)
 
 ---
@@ -68,10 +71,11 @@ Install arduino-littlefs-upload, following https://github.com/earlephilhower/ard
 1. Install ESP32 board support in Arduino IDE
 2. Select correct ESP32 board and COM port
 3. Use LittleFS to flash /data folder to ESP32
-4. In climateNode.ino, replace "SSID" on line 30 with your network ssid and "PASSWORD" on line 31 with your network password
+4. Make a copy of config.example.h in the same folder and name it config.h
+5. In config.h, replace YOUR_WIFI_NAME your network ssid, and replace YOUR_WIFI_PASSWORD your network password
 4. Upload climateNode.ino to the ESP32
 5. Open Serial Monitor to obtain device IP address
-6. Enter IP address in a browser to access dashboard
+6. Enter device IP in a browser to access dashboard
 
 ---
 
