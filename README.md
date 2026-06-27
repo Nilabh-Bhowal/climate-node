@@ -6,7 +6,7 @@ This project is an ESP32-based embedded system that monitors temperature and hum
 
 The system operates fully standalone after flashing and does not require cloud services or external infrastructure.
 
-![dashboard screenshot](screenshots/dashboard.png)
+![dashboard screenshot](screenshots/dashboard.jpg)
 
 ---
 
@@ -182,4 +182,3 @@ Example:
 - DHT11 has limited accuracy and slow response time
 - PWM frequency and motor driver quality affect motor stability
 - LittleFS flash has limited write cycles; excessive logging may reduce lifespan over time
-```
